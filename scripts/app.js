@@ -21,8 +21,8 @@
     const bgColor = colors[index];
     const lightColors = ['pink', 'white', 'yellow'];
     const textColor = lightColors.includes(bgColor) ? 'gray' : 'white';
-    card.textContent = bgColor;
-    card.setAttribute('style', `background:${bgColor};color:${textColor}`);
+    document.querySelector('#title').textContent = bgColor;
+    document.querySelector('.card').setAttribute('style', `background:${bgColor};color:${textColor}`);
   };
 
   if ('serviceWorker' in navigator) {
